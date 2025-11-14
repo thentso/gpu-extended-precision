@@ -7,7 +7,7 @@ def bicgstab_unpreconditioned(A, b, num_iters):
     Unpreconditioned BiCGSTAB with:
       - x0 = 0
       - r0 = b
-      - r_hat0 = r0
+      - r_hat0 = 
       - fixed number of iterations (no stopping test)
 
     Parameters
