@@ -157,22 +157,21 @@ def test_sqrt(a: float):
 
     
 if __name__ == "__main__":
-    # for i, (x0, x1, y0, y1, dd0_exp, dd1_exp, m0_exp, m1_exp) in enumerate(TEST_CASES, 1):   # syntax starts i at 1, but still is using each case and forgetting the 0th
-    #     dd0_act, dd1_act = ddadd(x0, x1, y0, y1)
-    #     m0_act,  m1_act  = madd(x0, x1, y0, y1)
+    for i, (x0, x1, y0, y1, dd0_exp, dd1_exp, m0_exp, m1_exp) in enumerate(TEST_CASES, 1):   # syntax starts i at 1, but still is using each case and forgetting the 0th
+        dd0_act, dd1_act = ddadd(x0, x1, y0, y1)
+        m0_act,  m1_act  = madd(x0, x1, y0, y1)
 
-    #     print(f"\n=== Case #{i} ===")
-    #     print(" Inputs: x0=", x0, " x1=", x1, " y0=", y0, " y1=", y1)
-    #     print(" ddadd → actual:   ", (dd0_act, dd1_act))
-    #     print("        expected: ", (dd0_exp, dd1_exp))
-    #     print(" match? ", (dd0_act, dd1_act) == (dd0_exp, dd1_exp))
+        print(f"\n=== Case #{i} ===")
+        print(" Inputs: x0=", x0, " x1=", x1, " y0=", y0, " y1=", y1)
+        print(" ddadd → actual:   ", (dd0_act, dd1_act))
+        print("        expected: ", (dd0_exp, dd1_exp))
+        print(" match? ", (dd0_act, dd1_act) == (dd0_exp, dd1_exp))
 
-    #     print(" madd  → actual:   ", (m0_act, m1_act))
-    #     print("        expected: ", (m0_exp, m1_exp))
-    #     print(" match? ", (m0_act, m1_act) == (m0_exp, m1_exp))
+        print(" madd  → actual:   ", (m0_act, m1_act))
+        print("        expected: ", (m0_exp, m1_exp))
+        print(" match? ", (m0_act, m1_act) == (m0_exp, m1_exp))
 
 
-    # testExpression()
-    # test_division(1.24, 3.56)
-    test_sqrt(5.32)
-    
+    testExpression()
+    test_division(1.24, 3.56)
+    test_sqrt(5.3)
